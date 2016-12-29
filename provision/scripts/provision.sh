@@ -25,5 +25,5 @@ composer global require "laravel/installer=~1.1"
 echo 'export PATH=~/.composer/vendor/laravel/installer:$PATH' >> ~/.bash_profile
 source ~/.bash_profile
 ### laravel
-#laravel new /var/www/nbs-template
+cp -a /var/www/app/.env.example /var/www/app/.env
 
