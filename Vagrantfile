@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.hostname = "app"
   config.vm.network "private_network", ip: "192.168.10.10"
-  config.vm.synced_folder "sync", "/var/www/", create: false, mount_options: ['dmode=775','fmode=755']
+  config.vm.synced_folder "../nbs-project/project", "/var/www/", create: false, mount_options: ['dmode=775','fmode=755']
 
   config.vm.provider "virtualbox" do |vb|
     vb.cpus = 1
