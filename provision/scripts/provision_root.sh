@@ -21,6 +21,7 @@ cp -p /usr/share/zoneinfo/Japan /etc/localtime
 rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm
 yum -y install nginx
 cp -a app.conf /etc/nginx/conf.d/app.conf
+cp -a nginx.conf /etc/nginx/nginx.conf
 /sbin/service nginx restart
 /sbin/chkconfig nginx on
 
