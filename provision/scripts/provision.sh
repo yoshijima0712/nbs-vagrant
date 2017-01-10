@@ -26,4 +26,5 @@ echo 'export PATH=~/.composer/vendor/laravel/installer:$PATH' >> ~/.bash_profile
 source ~/.bash_profile
 ### laravel
 cp -a /var/www/app/.env.example /var/www/app/.env
-
+cd /var/www/app && composer install
+php artisan key:generate
