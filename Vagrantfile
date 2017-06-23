@@ -6,8 +6,8 @@ Vagrant.configure("2") do |config|
   config.vm.define "app" do |node|
     node.vm.hostname = "app"
     node.vm.network "private_network", ip: "192.168.10.10"
-    #node.vm.synced_folder "../nbs-project/", "/var/www/", owner: "nginx", group: "nginx", create: false, mount_options: ['dmode=775','fmode=755']
-    node.vm.synced_folder "../nbs-project/", "/var/www/", create: false, mount_options: ['dmode=775','fmode=755']
+    #node.vm.synced_folder "../nbs-vagrant/", "/var/www/", owner: "nginx", group: "nginx", create: false, mount_options: ['dmode=775','fmode=755']
+    node.vm.synced_folder "../nbs-vagrant/", "/var/www/", create: false, mount_options: ['dmode=775','fmode=755']
   end
 
   config.vm.provider "virtualbox" do |vb|

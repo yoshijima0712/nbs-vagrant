@@ -36,3 +36,6 @@ yum --enablerepo=epel -y install libmcrypt-devel libtidy-devel re2c
 
 ### php-fpm
 cp -a php-fpm /etc/init.d/php-fpm
+
+### BZip2
+yum -y install bzip2-devel
